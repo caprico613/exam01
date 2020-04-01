@@ -2,11 +2,11 @@
 
 #include "uLCD_4DGL.h"
 
-PwmOut PWM1(D7);
+PwmOut PWM1(D6);
 uLCD_4DGL uLCD(D1, D0, D2);
 Serial pc( USBTX, USBRX );
 //AnalogIn Ain(A0);
-DigitalIn  Ddata(D8);
+DigitalIn  Ddata(D7);
 
 float j;
 
@@ -28,7 +28,7 @@ int main()
         for (float i = 0; i <= 1; i+=0.1)
         {
             PWM1 = i;
-             j = Ddata;
+            j = Ddata;
             pc.printf("%1.3f\r\n", j);            
             wait(0.1);
         }
