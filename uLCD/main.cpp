@@ -28,16 +28,16 @@ int main()
         for (float i = 0; i <= 1; i+=0.1)
         {
             PWM1 = i;
-            j = ADCdata;
-            pc.printf("%1.3f\r\n", j);           
+            //j = ADCdata;
+            pc.printf("%1.3f\r\n", ADCdata);           
             wait(0.1);
         }
         
         for (float i = 1; i >= 0; i-=0.1)
         {
             PWM1 = i;
-             j = ADCdata;
-            pc.printf("%1.3f\r\n", j);    
+             //j = ADCdata;
+            pc.printf("%1.3f\r\n", ADCdata);    
             wait(0.1);
         }       
 
