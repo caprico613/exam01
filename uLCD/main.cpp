@@ -8,7 +8,7 @@ Serial pc( USBTX, USBRX );
 //AnalogIn Ain(A0);
 DigitalIn  Ddata(D7);
 
-float j;
+int j;
 
 int main()
 
@@ -29,7 +29,7 @@ int main()
         {
             PWM1 = i;
             j = Ddata;
-            pc.printf("%1.3f\r\n", j);            
+            pc.printf("%d\r\n", j);            
             wait(0.1);
         }
         
@@ -37,7 +37,7 @@ int main()
         {
             PWM1 = i;
             j = Ddata;
-            pc.printf("%1.3f\r\n", j);    
+            pc.printf("%d\r\n", j);    
             wait(0.1);
         }       
 
