@@ -6,7 +6,7 @@ PwmOut PWM1(D7);
 uLCD_4DGL uLCD(D1, D0, D2);
 Serial pc( USBTX, USBRX );
 //AnalogIn Ain(A0);
-DigitalIn  Ddata(D7);
+DigitalIn  Ddata(D8);
 
 float j;
 
